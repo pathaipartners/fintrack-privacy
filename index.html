@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — FinTrack</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #6C5CE7, #a29bfe);
+      color: white;
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p { opacity: 0.85; font-size: 0.95rem; }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 24px 64px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #6C5CE7;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0eeff;
+    }
+    p { margin-bottom: 10px; font-size: 0.95rem; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+    a { color: #6C5CE7; }
+    .updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FinTrack</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Información general</h2>
+    <p>FinTrack ("la aplicación") es una aplicación de finanzas personales desarrollada por Ana Riascos. Esta política describe cómo recopilamos, usamos y protegemos la información de nuestros usuarios.</p>
+    <p>Al usar FinTrack, aceptas los términos descritos en esta política.</p>
+  </section>
+
+  <section>
+    <h2>2. Datos que recopilamos</h2>
+    <p><strong>Datos financieros personales:</strong> La aplicación almacena localmente en tu dispositivo información como ingresos, gastos, cuentas de ahorro, préstamos y tarjetas de crédito. Estos datos nunca se envían a nuestros servidores sin tu consentimiento explícito.</p>
+    <p><strong>Datos de sincronización (Plan Familiar):</strong> Si activas el Plan Familiar, los datos de transacciones ocasionales se sincronizan con Firebase Firestore para compartirlos con los miembros de tu grupo familiar. En este caso se recopila:</p>
+    <ul>
+      <li>Dirección de correo electrónico (autenticación)</li>
+      <li>Transacciones de ingresos y gastos ocasionales</li>
+      <li>Identificador único del dispositivo (UID de Firebase)</li>
+    </ul>
+    <p><strong>Datos de publicidad:</strong> La versión gratuita muestra anuncios a través de Google AdMob, que puede recopilar identificadores de dispositivo y datos de uso para personalizar anuncios conforme a su propia <a href="https://policies.google.com/privacy" target="_blank">política de privacidad</a>.</p>
+  </section>
+
+  <section>
+    <h2>3. Cómo usamos tus datos</h2>
+    <ul>
+      <li>Almacenar tu información financiera localmente para el funcionamiento de la app</li>
+      <li>Sincronizar datos entre dispositivos del mismo grupo familiar (solo si activas el Plan Familiar)</li>
+      <li>Mostrar anuncios relevantes en la versión gratuita</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tu información con terceros con fines comerciales.</p>
+  </section>
+
+  <section>
+    <h2>4. Almacenamiento y seguridad</h2>
+    <p><strong>Almacenamiento local:</strong> Todos tus datos financieros se guardan en una base de datos SQLite en tu dispositivo. No tenemos acceso a estos datos.</p>
+    <p><strong>Almacenamiento en la nube:</strong> Si usas el Plan Familiar, los datos se almacenan en Firebase Firestore (Google Cloud) con cifrado en tránsito (HTTPS/TLS) y en reposo.</p>
+    <p><strong>Exportación de datos:</strong> La función de exportación genera un archivo JSON en tu dispositivo que solo tú controlas.</p>
+  </section>
+
+  <section>
+    <h2>5. Eliminación de datos</h2>
+    <p>Tienes derecho a eliminar tus datos en cualquier momento:</p>
+    <ul>
+      <li><strong>Datos locales:</strong> Desinstala la aplicación para eliminar todos los datos del dispositivo.</li>
+      <li><strong>Datos en la nube (Plan Familiar):</strong> Desde la app ve a Ajustes y elimina tu cuenta del grupo familiar. Esto elimina tus datos de Firebase.</li>
+      <li><strong>Solicitud de eliminación:</strong> Puedes enviar una solicitud a <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a> indicando tu UID de Firebase y eliminaremos manualmente tus datos en un plazo de 30 días.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Servicios de terceros</h2>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — autenticación y sincronización de datos</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> — publicidad en la versión gratuita</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Menores de edad</h2>
+    <p>FinTrack está dirigida a usuarios mayores de 18 años. No recopilamos intencionalmente datos de menores de edad.</p>
+  </section>
+
+  <section>
+    <h2>8. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos mediante una actualización de la app. El uso continuado de la app después de los cambios implica tu aceptación.</p>
+  </section>
+
+  <section>
+    <h2>9. Contacto</h2>
+    <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
+    <p><strong>Email:</strong> <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a></p>
+  </section>
+
+  <p class="updated">Última actualización: 10 de abril de 2025</p>
+
+</main>
+
+</body>
+</html>
