@@ -43,6 +43,14 @@
     ul { padding-left: 20px; margin-bottom: 10px; }
     li { margin-bottom: 6px; font-size: 0.95rem; }
     a { color: #6C5CE7; }
+    .highlight {
+      background: #f0eeff;
+      border-left: 4px solid #6C5CE7;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 0.93rem;
+    }
     .updated {
       text-align: center;
       font-size: 0.82rem;
@@ -62,7 +70,7 @@
 
   <section>
     <h2>1. Información general</h2>
-    <p>FinTrack ("la aplicación") es una aplicación de finanzas personales desarrollada por Ana Riascos. Esta política describe cómo recopilamos, usamos y protegemos la información de nuestros usuarios.</p>
+    <p>FinTrack ("la aplicación") es una aplicación de finanzas personales desarrollada por <strong>Ana Cristina Riascos Jimenez (PathAI Partners)</strong>. Esta política describe cómo recopilamos, usamos y protegemos la información de nuestros usuarios.</p>
     <p>Al usar FinTrack, aceptas los términos descritos en esta política.</p>
   </section>
 
@@ -75,7 +83,10 @@
       <li>Transacciones de ingresos y gastos ocasionales</li>
       <li>Identificador único del dispositivo (UID de Firebase)</li>
     </ul>
+    <p><strong>Datos de análisis con IA:</strong> Si usas la función de Análisis Financiero con IA y otorgas tu consentimiento, se envía un resumen agregado de tus datos financieros (totales de ingresos, gastos y categorías) a Google Gemini API para generar recomendaciones personalizadas. Ver sección 5 para más detalle.</p>
     <p><strong>Datos de publicidad:</strong> La versión gratuita muestra anuncios a través de Google AdMob, que puede recopilar identificadores de dispositivo y datos de uso para personalizar anuncios conforme a su propia <a href="https://policies.google.com/privacy" target="_blank">política de privacidad</a>.</p>
+    <p><strong>Datos de suscripción:</strong> Los pagos y datos de facturación de la suscripción Premium son procesados exclusivamente por Apple App Store o Google Play. No almacenamos información de tarjetas de crédito ni datos de pago.</p>
+    <p><strong>Datos biométricos:</strong> Si activas el bloqueo por biometría (Face ID / Touch ID / huella dactilar), el reconocimiento se realiza enteramente por el sistema operativo del dispositivo. FinTrack no accede ni almacena datos biométricos.</p>
   </section>
 
   <section>
@@ -83,7 +94,9 @@
     <ul>
       <li>Almacenar tu información financiera localmente para el funcionamiento de la app</li>
       <li>Sincronizar datos entre dispositivos del mismo grupo familiar (solo si activas el Plan Familiar)</li>
+      <li>Generar análisis financieros personalizados mediante IA (solo con tu consentimiento explícito)</li>
       <li>Mostrar anuncios relevantes en la versión gratuita</li>
+      <li>Gestionar tu suscripción Premium</li>
     </ul>
     <p>No vendemos, alquilamos ni compartimos tu información con terceros con fines comerciales.</p>
   </section>
@@ -96,7 +109,19 @@
   </section>
 
   <section>
-    <h2>5. Eliminación de datos</h2>
+    <h2>5. Inteligencia Artificial de terceros (Google Gemini)</h2>
+    <p>FinTrack ofrece una función opcional de <strong>Análisis Financiero con IA</strong> que utiliza la API de <strong>Google Gemini</strong> (un servicio de inteligencia artificial de Google LLC).</p>
+    <div class="highlight">
+      <strong>¿Qué datos se envían a Google Gemini?</strong><br/>
+      Únicamente un resumen numérico agregado: totales de ingresos, totales de gastos y montos por categoría del período analizado. <strong>No se envía ningún dato personal</strong> como nombre, correo electrónico, número de cuenta, ni datos de identificación.
+    </div>
+    <p><strong>Consentimiento:</strong> Antes de usar esta función por primera vez, la app te mostrará un diálogo explicando qué datos se envían. Solo se activa si aceptas explícitamente.</p>
+    <p><strong>Acceso a los datos enviados:</strong> Puedes ver en todo momento el tipo de información que se comparte desde el diálogo de consentimiento en la pantalla de Análisis Financiero, y puedes revocar tu consentimiento desde Ajustes en cualquier momento.</p>
+    <p><strong>Política de privacidad de Google Gemini:</strong> <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+  </section>
+
+  <section>
+    <h2>6. Eliminación de datos</h2>
     <p>Tienes derecho a eliminar tus datos en cualquier momento:</p>
     <ul>
       <li><strong>Datos locales:</strong> Desinstala la aplicación para eliminar todos los datos del dispositivo.</li>
@@ -106,30 +131,34 @@
   </section>
 
   <section>
-    <h2>6. Servicios de terceros</h2>
+    <h2>7. Servicios de terceros</h2>
     <ul>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — autenticación y sincronización de datos</li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — autenticación y sincronización de datos (Plan Familiar)</li>
       <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> — publicidad en la versión gratuita</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Gemini API</a> — análisis financiero con inteligencia artificial (requiere consentimiento)</li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store</a> — procesamiento de suscripciones y pagos in-app</li>
+      <li><a href="https://play.google.com/about/play-terms/index.html" target="_blank">Google Play</a> — procesamiento de suscripciones y pagos in-app</li>
     </ul>
   </section>
 
   <section>
-    <h2>7. Menores de edad</h2>
+    <h2>8. Menores de edad</h2>
     <p>FinTrack está dirigida a usuarios mayores de 18 años. No recopilamos intencionalmente datos de menores de edad.</p>
   </section>
 
   <section>
-    <h2>8. Cambios a esta política</h2>
+    <h2>9. Cambios a esta política</h2>
     <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos mediante una actualización de la app. El uso continuado de la app después de los cambios implica tu aceptación.</p>
   </section>
 
   <section>
-    <h2>9. Contacto</h2>
+    <h2>10. Contacto</h2>
     <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
     <p><strong>Email:</strong> <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a></p>
+    <p><strong>Desarrollador:</strong> Ana Cristina Riascos Jimenez (PathAI Partners)</p>
   </section>
 
-  <p class="updated">Última actualización: 10 de abril de 2025</p>
+  <p class="updated">Última actualización: 28 de abril de 2026</p>
 
 </main>
 
