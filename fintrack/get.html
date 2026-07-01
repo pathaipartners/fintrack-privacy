@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descarga FinTrack</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #6C5CE7, #a29bfe);
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px 32px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    h1 { font-size: 1.4rem; margin-bottom: 6px; }
+    p.sub { color: #666; font-size: 0.9rem; margin-bottom: 28px; }
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      transition: transform 0.15s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-ios { background: #1a1a2e; color: white; }
+    .btn-android { background: #6C5CE7; color: white; }
+    .spinner {
+      width: 28px; height: 28px;
+      border: 3px solid #eee;
+      border-top-color: #6C5CE7;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .redirecting #manual { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="card">
+    <div class="spinner" id="spinner"></div>
+    <h1>FinTrack</h1>
+    <p class="sub" id="status">Abriendo tu tienda de aplicaciones…</p>
+
+    <div id="manual">
+      <a class="btn btn-ios" id="ios-link" href="https://apps.apple.com/co/app/fintrack-control-de-gastos/id6763693327">Descargar en App Store</a>
+      <a class="btn btn-android" id="android-link" href="https://play.google.com/store/apps/details?id=com.fintrack.fintrack">Descargar en Google Play</a>
+    </div>
+  </div>
+
+  <script>
+    var IOS_URL = "https://apps.apple.com/co/app/fintrack-control-de-gastos/id6763693327";
+    var ANDROID_URL = "https://play.google.com/store/apps/details?id=com.fintrack.fintrack";
+
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    var isAndroid = /Android/.test(ua);
+
+    if (isIOS) {
+      window.location.replace(IOS_URL);
+    } else if (isAndroid) {
+      window.location.replace(ANDROID_URL);
+    } else {
+      document.getElementById('spinner').style.display = 'none';
+      document.getElementById('status').textContent = 'Elige tu plataforma:';
+    }
+  </script>
+
+</body>
+</html>
