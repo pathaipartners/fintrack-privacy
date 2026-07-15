@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — PensionApp</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #031635;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #031635, #0a2f66);
+      color: white;
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p { opacity: 0.85; font-size: 0.95rem; }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 24px 64px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #031635;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #D4AF37;
+    }
+    p { margin-bottom: 10px; font-size: 0.95rem; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+    a { color: #0a2f66; }
+    .highlight {
+      background: #fdf8e9;
+      border-left: 4px solid #D4AF37;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 0.93rem;
+    }
+    .updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="../index.html" style="display:inline-block;margin-bottom:16px;font-size:0.85rem;color:rgba(255,255,255,0.65);text-decoration:none;">← PathAI Partners</a>
+  <h1>PensionApp</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Información general</h2>
+    <p>PensionApp ("la aplicación") es una aplicación de asesoría pensional desarrollada por <strong>PATH AI PARTNERS S.A.S.</strong> (NIT 902.051.926-5, Medellín, Colombia). Ayuda a personas en Colombia a conocer su situación pensional (semanas cotizadas, traslados de fondo, historia laboral) y a recibir orientación de un equipo de asesores.</p>
+    <p>Al usar PensionApp, aceptas los términos descritos en esta política.</p>
+  </section>
+
+  <section>
+    <h2>2. Datos que recopilamos</h2>
+    <p><strong>Flujo de diagnóstico (sin necesidad de crear cuenta):</strong> para generar tu diagnóstico pensional, recopilamos los datos que ingresas en el formulario: nombre completo, número de documento de identidad, teléfono, correo electrónico, ciudad, edad, sexo, fondo de pensión actual, semanas cotizadas reportadas, si cotizas actualmente, y una descripción de tu caso o necesidad.</p>
+    <p><strong>Documentos:</strong> si decides adjuntar documentos (por ejemplo, tu historia laboral o cédula) para que un asesor los revise, esos archivos se almacenan en Firebase Storage (Google Cloud).</p>
+    <p><strong>Cuenta de asesor:</strong> los asesores de PathAI Partners que gestionan los casos ingresan con correo y contraseña (Firebase Authentication). Este acceso es interno del equipo, no está disponible para el público.</p>
+    <div class="highlight">
+      <strong>Importante:</strong> a diferencia de otras apps que permiten compartir información entre usuarios, tus datos en PensionApp solo son visibles para el equipo de asesores de PathAI Partners que gestiona tu caso — nunca para otros clientes.
+    </div>
+    <p>PensionApp no muestra publicidad ni tiene compras ni suscripciones dentro de la app: es gratuita para el cliente.</p>
+  </section>
+
+  <section>
+    <h2>3. Cómo usamos tus datos</h2>
+    <ul>
+      <li>Generar tu diagnóstico pensional inicial (clasificación del caso, prioridad y etiqueta orientativa)</li>
+      <li>Que un asesor humano revise tu caso, te contacte y te dé seguimiento (por teléfono, correo o WhatsApp)</li>
+      <li>Gestionar el historial de contactos y el estado de tu trámite dentro del equipo</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tu información con terceros con fines comerciales. La clasificación automática del caso es solo una guía interna de priorización: no reemplaza el criterio profesional de un asesor y no tiene valor legal por sí sola.</p>
+  </section>
+
+  <section>
+    <h2>4. Almacenamiento y seguridad</h2>
+    <p>Tus datos se almacenan en Firebase (Firestore y Storage, infraestructura de Google Cloud), con cifrado en tránsito (HTTPS/TLS) y en reposo. El envío del formulario de diagnóstico y la carga de documentos no requieren iniciar sesión, por lo que cualquier persona con el enlace de la app puede enviar un caso nuevo; sin embargo, solo los asesores autenticados de PathAI Partners pueden leer, actualizar o eliminar los casos ya registrados.</p>
+    <p>Dado que PensionApp trata datos personales sensibles (incluyendo tu número de documento de identidad), aplicamos el principio de acceso mínimo necesario: solo el equipo de asesores que gestiona casos tiene acceso a esta información.</p>
+  </section>
+
+  <section id="eliminar-cuenta">
+    <h2>5. Eliminación de tus datos</h2>
+    <p>Como el flujo de diagnóstico no requiere cuenta, no existe un "usuario" para eliminar en el sentido tradicional. Sin embargo, tienes derecho a solicitar la eliminación de tu información personal en cualquier momento:</p>
+    <ul>
+      <li>Envía un correo a <a href="mailto:pathai.partners@gmail.com?subject=Eliminar%20datos%20de%20PensionApp">pathai.partners@gmail.com</a> con el asunto "Eliminar datos de PensionApp", indicando tu nombre completo y el número de documento con el que registraste tu caso.</li>
+      <li>Procesaremos la solicitud en un plazo máximo de 30 días, eliminando tus datos personales, el caso asociado y los documentos que hayas cargado.</li>
+    </ul>
+    <p>Si eres asesor y quieres eliminar tu cuenta de acceso al panel, escríbenos al mismo correo.</p>
+  </section>
+
+  <section>
+    <h2>6. Tus derechos (Habeas Data — Ley 1581 de 2012)</h2>
+    <p>Como titular de tus datos personales en Colombia, tienes derecho a conocer, actualizar, rectificar y solicitar la eliminación de tu información, así como a revocar la autorización otorgada para su tratamiento, en los términos de la Ley 1581 de 2012 y sus decretos reglamentarios. Puedes ejercer estos derechos escribiendo a <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>7. Servicios de terceros</h2>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — autenticación (asesores), base de datos y almacenamiento de documentos</li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store</a> — distribución de la app en iOS</li>
+      <li><a href="https://play.google.com/about/play-terms/index.html" target="_blank">Google Play</a> — distribución de la app en Android</li>
+      <li><a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">WhatsApp</a> — si eliges contactar a un asesor por este medio</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Menores de edad</h2>
+    <p>PensionApp está dirigida a personas en edad de cotizar al sistema pensional colombiano (mayores de 18 años). No recopilamos intencionalmente datos de menores de edad.</p>
+  </section>
+
+  <section>
+    <h2>9. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos mediante una actualización de la app o de esta página. El uso continuado de la app después de los cambios implica tu aceptación.</p>
+  </section>
+
+  <section>
+    <h2>10. Contacto</h2>
+    <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
+    <p><strong>Email:</strong> <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a></p>
+    <p><strong>Responsable del tratamiento:</strong> PATH AI PARTNERS S.A.S. (NIT 902.051.926-5), Medellín, Colombia</p>
+  </section>
+
+  <p class="updated">Última actualización: 15 de julio de 2026</p>
+
+</main>
+
+</body>
+</html>
