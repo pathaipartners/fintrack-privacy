@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — FarrApp</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d0b1a;
+      color: #e8e6f5;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #ec1abf, #6c5ce7, #22d3ee);
+      color: white;
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p { opacity: 0.9; font-size: 0.95rem; }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 24px 64px;
+    }
+    section {
+      background: #17142b;
+      border: 1px solid #2a2547;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #d946ef;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2a2547;
+    }
+    p { margin-bottom: 10px; font-size: 0.95rem; color: #cbc7e0; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; color: #cbc7e0; }
+    a { color: #22d3ee; }
+    .highlight {
+      background: #241f3d;
+      border-left: 4px solid #d946ef;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 0.93rem;
+    }
+    .updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #8b86a8;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="../index.html" style="display:inline-block;margin-bottom:16px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none;">← PathAI Partners</a>
+  <h1>FarrApp</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Información general</h2>
+    <p>FarrApp ("la aplicación") es una aplicación de vida nocturna desarrollada por <strong>PathAI Partners</strong> que conecta a asistentes con discotecas y locales nocturnos ("venues"), y permite a los dueños de esos locales gestionarlos. Esta política describe cómo recopilamos, usamos y protegemos la información de nuestros usuarios.</p>
+    <p>Al usar FarrApp, aceptas los términos descritos en esta política.</p>
+  </section>
+
+  <section>
+    <h2>2. Datos que recopilamos</h2>
+    <p><strong>Datos de cuenta:</strong> Al registrarte con correo y contraseña o con Google Sign-In, recopilamos tu correo electrónico, nombre y foto de perfil (si la proporcionas). Tu cuenta tiene un rol: asistente ("customer") o dueño de local ("owner").</p>
+    <p><strong>Datos de ubicación (GPS):</strong> Al hacer check-in en un local mediante código QR, la app captura tu ubicación GPS en ese momento para verificar que efectivamente te encuentras cerca del local. Esta verificación se hace en nuestros servidores; no guardamos un historial de tu ubicación, solo el resultado del check-in (hora de entrada y salida, mesa asignada).</p>
+    <p><strong>Datos de check-in:</strong> El check-in usa un código QR del local junto con un PIN diario que cambia automáticamente, para abrir tu sesión en una mesa. Guardamos la hora de entrada/salida y la mesa asociada a tu sesión.</p>
+    <p><strong>Datos de Spotify (opcional):</strong> Si conectas tu cuenta de Spotify, usamos autenticación OAuth para acceder a funciones según tu rol: los dueños de local pueden ver y controlar la reproducción y las playlists del local; los asistentes solo comparten su perfil básico de Spotify. Los tokens de acceso de Spotify se guardan cifrados en el almacenamiento seguro del dispositivo — nunca se guardan en nuestros servidores.</p>
+    <p><strong>Notificaciones push:</strong> Si aceptas recibir notificaciones, guardamos un token de tu dispositivo (Firebase Cloud Messaging) para poder enviarte avisos relevantes (por ejemplo, confirmaciones de check-in).</p>
+    <p><strong>Fotos de locales (solo dueños):</strong> Si eres dueño de un local, puedes subir fotos del venue y del menú, que se almacenan en nuestros servidores (Firebase Storage) y son visibles públicamente dentro de la app para los asistentes.</p>
+    <p><strong>PIN de personal (staff):</strong> Los dueños pueden crear accesos de personal ("meseros") protegidos con un PIN. Ese PIN nunca se guarda en texto plano — se almacena cifrado (hash) y no puede ser recuperado, solo restablecido.</p>
+  </section>
+
+  <section>
+    <h2>3. Verificación de ubicación para check-in</h2>
+    <div class="highlight">
+      <strong>¿Cómo funciona?</strong><br/>
+      Cuando escaneas el código QR de un local para hacer check-in, la app te pide permiso de ubicación y envía tu posición GPS en ese instante, junto con el código escaneado y el PIN diario del local, a nuestros servidores para confirmar que estás físicamente cerca del local. Esto evita check-ins falsos o remotos.
+    </div>
+    <p>Solo se usa tu ubicación en el momento del check-in — la app no seguimiento tu ubicación en segundo plano ni en ningún otro momento.</p>
+  </section>
+
+  <section>
+    <h2>4. Cómo usamos tus datos</h2>
+    <ul>
+      <li>Crear y gestionar tu cuenta y tu sesión dentro de la app</li>
+      <li>Verificar tu presencia física al hacer check-in en un local</li>
+      <li>Mostrar locales cercanos en el mapa (Google Maps)</li>
+      <li>Permitir a los dueños gestionar su local, personal y contenido musical (Spotify)</li>
+      <li>Enviarte notificaciones relevantes sobre tu actividad en la app</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tu información con terceros con fines comerciales. FarrApp no muestra publicidad ni usa herramientas de analítica de terceros.</p>
+  </section>
+
+  <section>
+    <h2>5. Almacenamiento y seguridad</h2>
+    <p><strong>Datos de cuenta y check-in:</strong> se almacenan en Firebase (Google Cloud), con cifrado en tránsito (HTTPS/TLS) y en reposo.</p>
+    <p><strong>Tokens de Spotify:</strong> se almacenan cifrados localmente en tu dispositivo mediante almacenamiento seguro del sistema operativo, nunca en nuestros servidores.</p>
+    <p><strong>PINs de personal:</strong> se almacenan únicamente como hash criptográfico (SHA-256), nunca en texto plano.</p>
+  </section>
+
+  <section>
+    <h2>6. Eliminación de datos</h2>
+    <p>Puedes solicitar la eliminación de tu cuenta y tus datos personales en cualquier momento escribiendo a <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a> desde el correo asociado a tu cuenta. Procesaremos tu solicitud en un plazo máximo de 30 días.</p>
+    <p>Desinstalar la aplicación no elimina tus datos de nuestros servidores — para eso debes hacer la solicitud descrita arriba.</p>
+  </section>
+
+  <section>
+    <h2>7. Servicios de terceros</h2>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — autenticación, base de datos, almacenamiento de fotos y notificaciones push</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Maps</a> — visualización de locales en el mapa</li>
+      <li><a href="https://www.spotify.com/legal/privacy-policy/" target="_blank">Spotify</a> — conexión opcional para reproducción y playlists (requiere tu autorización explícita)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Menores de edad</h2>
+    <p>FarrApp está dirigida a usuarios mayores de 18 años, dado que su propósito está relacionado con locales nocturnos. No recopilamos intencionalmente datos de menores de edad.</p>
+  </section>
+
+  <section>
+    <h2>9. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos mediante una actualización de la app. El uso continuado de la app después de los cambios implica tu aceptación.</p>
+  </section>
+
+  <section>
+    <h2>10. Contacto</h2>
+    <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
+    <p><strong>Email:</strong> <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a></p>
+    <p><strong>Desarrollador:</strong> PathAI Partners</p>
+  </section>
+
+  <p class="updated">Última actualización: 18 de julio de 2026</p>
+
+</main>
+
+</body>
+</html>
