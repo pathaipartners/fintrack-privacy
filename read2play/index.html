@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Read2Play</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a2a4a, #2d5a4a);
+      color: white;
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p { opacity: 0.75; font-size: 0.95rem; }
+    header .back { display: inline-block; margin-bottom: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.65); text-decoration: none; }
+    header .back:hover { color: white; }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 24px 64px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #2d5a4a;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e8f0ec;
+    }
+    p { margin-bottom: 10px; font-size: 0.95rem; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+    a { color: #2d5a4a; }
+    .highlight {
+      background: #e8f0ec;
+      border-left: 4px solid #2d5a4a;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 0.93rem;
+    }
+    .updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="../index.html">← PathAI Partners</a>
+  <h1>Read2Play</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Información general</h2>
+    <p>Read2Play ("la aplicación") es una aplicación de control parental desarrollada por <strong>PATH AI PARTNERS S.A.S.</strong> (NIT 902.051.926-5, Medellín, Colombia). Permite a un padre, madre o tutor configurar bloqueos de tiempo de pantalla en la tablet o celular de un niño, que solo se desbloquean cuando el niño completa un reto de comprensión lectora (leer un cuento corto y responder preguntas).</p>
+    <p>Esta política describe cómo funciona la aplicación y qué información procesa.</p>
+    <div class="highlight">
+      <strong>Principio fundamental:</strong> Read2Play funciona completamente de forma local en el dispositivo. La configuración del padre, el progreso de lectura del niño y la lista de apps permitidas se guardan únicamente en el dispositivo. No tenemos servidores propios ni cuentas de usuario: no recopilamos, ni enviamos a ningún servidor, información personal del niño ni del padre.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Datos que recopilamos</h2>
+    <p><strong>Configuración local:</strong> El intervalo de bloqueo, el nivel de lectura (banda de edad), el número de preguntas, el PIN de acceso a Ajustes (guardado como hash, nunca en texto plano) y la lista de apps permitidas se guardan localmente en el dispositivo mediante almacenamiento nativo (SharedPreferences). Nada de esto sale del dispositivo.</p>
+    <p><strong>Progreso de lectura:</strong> Los cuentos leídos, respuestas correctas y logros del niño se guardan localmente para mostrar el progreso al padre en la app. No se comparte con terceros.</p>
+    <p><strong>Contenido de los cuentos:</strong> El banco de cuentos y preguntas viene incluido en la app (archivo local). No requiere conexión a internet para funcionar.</p>
+    <p><strong>Datos de publicidad:</strong> La app muestra anuncios a través de <strong>Google AdMob</strong>. Los anuncios se configuran como aptos para audiencia infantil (sin personalización basada en intereses), conforme a la <a href="https://policies.google.com/privacy" target="_blank">política de privacidad de Google</a> y a las políticas de Google para apps con audiencia infantil.</p>
+  </section>
+
+  <section>
+    <h2>3. Cómo usamos los datos</h2>
+    <ul>
+      <li>Determinar si el dispositivo debe estar bloqueado o desbloqueado según el intervalo configurado</li>
+      <li>Elegir cuentos y preguntas apropiados para la banda de edad configurada por el padre</li>
+      <li>Restringir el acceso solo a las apps que el padre marcó como permitidas</li>
+      <li>Mostrar al padre el historial de lectura y logros del niño, dentro de la propia app</li>
+      <li>Mostrar anuncios aptos para audiencia infantil a través de Google AdMob</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos información con terceros con fines comerciales propios.</p>
+  </section>
+
+  <section>
+    <h2>4. Permisos del dispositivo</h2>
+    <ul>
+      <li><strong>Servicio de accesibilidad:</strong> El padre puede activar (opcionalmente, desde Ajustes) un servicio de accesibilidad para detectar en tiempo real cuándo el niño cambia de aplicación —incluso usando el botón de aplicaciones recientes— y aplicar el bloqueo si la app no está permitida. Este servicio <strong>solo lee el nombre del paquete de la app en primer plano</strong>; no lee, registra ni transmite el contenido de la pantalla, texto, contraseñas ni ninguna otra información.</li>
+      <li><strong>Aplicación de inicio (Home/Launcher):</strong> Read2Play puede configurarse como la pantalla de inicio del dispositivo para poder aplicar el bloqueo cada vez que el niño presiona el botón de inicio.</li>
+      <li><strong>Notificaciones:</strong> Para mostrar el temporizador de tiempo desbloqueado y avisar cuando está por terminar.</li>
+      <li><strong>Excepción de optimización de batería:</strong> Para que el temporizador de desbloqueo siga funcionando en segundo plano sin que el sistema operativo lo interrumpa.</li>
+      <li><strong>Lista de apps instaladas:</strong> Para mostrarle al padre las apps del dispositivo y que elija cuáles permitir en la whitelist.</li>
+    </ul>
+    <p>Todos estos permisos los activa el padre voluntariamente desde Ajustes (protegidos por PIN) y puede desactivarlos en cualquier momento, incluyendo el botón de "pausar protección" incluido en la propia app.</p>
+  </section>
+
+  <section>
+    <h2>5. Servicios de terceros</h2>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> — publicidad dentro de la app, configurada como apta para audiencia infantil</li>
+      <li><a href="https://play.google.com/about/play-terms/index.html" target="_blank">Google Play</a> — distribución de la aplicación</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Eliminación de datos</h2>
+    <p>Como no almacenamos datos en servidores externos, no es necesario enviar solicitudes de eliminación adicionales.</p>
+    <ul>
+      <li><strong>Datos locales:</strong> Desinstala la aplicación para eliminar todos los datos del dispositivo permanentemente.</li>
+      <li><strong>Desde la app:</strong> El padre puede modificar o restablecer la configuración, el PIN y la whitelist en cualquier momento desde Ajustes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Menores de edad</h2>
+    <p>Read2Play está diseñada para ser usada por niños, siempre bajo la configuración y supervisión de un padre, madre o tutor adulto, quien protege los ajustes con un PIN. La aplicación no recopila información personal del niño (nombre, edad exacta, fotos, ubicación, contactos, etc.) ni requiere crear una cuenta.</p>
+    <p>Los anuncios mostrados a través de Google AdMob se configuran como aptos para audiencia infantil, sin personalización basada en el comportamiento o intereses del usuario, conforme a las políticas de Google para aplicaciones dirigidas a familias.</p>
+  </section>
+
+  <section>
+    <h2>8. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos mediante una actualización de la app. El uso continuado implica tu aceptación.</p>
+  </section>
+
+  <section>
+    <h2>9. Contacto</h2>
+    <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
+    <p><strong>Email:</strong> <a href="mailto:pathai.partners@gmail.com">pathai.partners@gmail.com</a></p>
+    <p><strong>Desarrollador:</strong> PATH AI PARTNERS S.A.S.</p>
+    <p><strong>Todas las apps:</strong> <a href="../index.html">pathai.partners — Apps</a></p>
+  </section>
+
+  <p class="updated">Última actualización: 21 de julio de 2026</p>
+
+</main>
+
+</body>
+</html>
